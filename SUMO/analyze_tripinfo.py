@@ -48,11 +48,11 @@ def main():
 
     plt.figure(figsize=(6, 4))
     plt.bar(labels, values, color=['skyblue', 'salmon'])
-    plt.title("Statistik Hasil Simulasi")
+    plt.title("Simulation result statistic")
     plt.ylabel("Detik")
     plt.tight_layout()
     os.makedirs("images", exist_ok=True)
-    plt.savefig("images/hasil_simulasi.png")
+    plt.savefig("images/simulation_result.png")
     plt.show()
 
 if __name__ == "__main__":
