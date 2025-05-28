@@ -3,7 +3,6 @@
 <!-- generated on 2025-05-25 23:16:05 by Eclipse SUMO polyconvert Version 1.23.1
 <polyconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/polyconvertConfiguration.xsd">
 
-
     <input>
         <net-file value="test.net.xml"/>
         <osm-files value="map.osm"/>
