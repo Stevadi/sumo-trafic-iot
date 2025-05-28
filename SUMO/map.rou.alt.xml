@@ -3,7 +3,6 @@
 <!-- generated on 2025-05-27 07:13:04 by Eclipse SUMO duarouter Version 1.23.1
 <duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
 
-
     <input>
         <net-file value="test.net.xml"/>
         <route-files value="trips.trips.xml"/>
