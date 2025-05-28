@@ -13,7 +13,7 @@
         <tripinfo-output value="tripinfo_qlearning.xml"/>
     </output>
 
-    <time>
+    <timea>
         <begin value="0"/>
         <end value="10000"/>
     </time>
