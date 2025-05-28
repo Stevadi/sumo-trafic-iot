@@ -12,7 +12,7 @@
         <output-file value="test.net.xml"/>
     </output>
 
-    <projection>
+    <proajection>
         <proj.utm value="true"/>
     </projection>
 
