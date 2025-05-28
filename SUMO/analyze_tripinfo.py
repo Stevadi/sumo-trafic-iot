@@ -4,7 +4,7 @@ import os
 
 def parse_tripinfo(file):
     if not os.path.exists(file):
-        print(f"❌ File {file} tidak ditemukan.")
+        print(f"❌ File {file} not found.")
         return [], []
     tree = ET.parse(file)
     root = tree.getroot()
@@ -19,31 +19,31 @@ def parse_tripinfo(file):
     return durations, waitings
 
 def main():
-    print("Pilih file tripinfo yang ingin dianalisis:")
-    print("1. tripinfo_adaptive.xml (lampu adaptif)")
-    print("2. tripinfo_control.xml (kontrol manual/otomatis)")
+    print("Choose tripinfo file that want to get analysis:")
+    print("1. tripinfo_adaptive.xml (adaptive lamp)")
+    print("2. tripinfo_control.xml (manual/automatic control)")
     print("3. tripinfo_qlearning.xml (Q-Learning)")
-    pilihan = input("Masukkan nomor [1/2/3] (default 1): ").strip()
-    if pilihan == "2":
+    pilihan = input("Insert number [1/2/3] (default 1): ").strip()
+    if option == "2":
         file = "tripinfo_control.xml"
-    elif pilihan == "3":
+    elif option == "3":
         file = "tripinfo_qlearning.xml"
     else:
         file = "tripinfo_adaptive.xml"
     durations, waitings = parse_tripinfo(file)
 
     if not durations:
-        print("❌ Tidak ada data dalam tripinfo.xml")
+        print("❌ No data in tripinfo.xml")
         return
 
     avg_duration = sum(durations) / len(durations)
     avg_waiting = sum(waitings) / len(waitings)
 
-    print(f"✅ Rata-rata waktu tempuh: {avg_duration:.2f} detik")
-    print(f"✅ Rata-rata waktu tunggu: {avg_waiting:.2f} detik")
+    print(f"✅ Average duration: {avg_duration:.2f} second")
+    print(f"✅ Average waiting: {avg_waiting:.2f} second")
 
     # Visualisasi
-    labels = ['Rata-rata Waktu Tempuh', 'Rata-rata Waktu Tunggu']
+    labels = ['Average Duration', 'Average Waiting']
     values = [avg_duration, avg_waiting]
 
     plt.figure(figsize=(6, 4))
