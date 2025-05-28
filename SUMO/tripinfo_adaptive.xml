@@ -9,7 +9,6 @@
         <additional-files value="map.poly.xml"/>
     </input>
 
-
     <output>
         <tripinfo-output value="tripinfo_adaptive.xml"/>
     </output>
